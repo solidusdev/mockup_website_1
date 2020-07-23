@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+#logo div img {
+  max-width: 100%;
+}
+
+main #hero-container {
+  height: 450px;
+  max-width: 100%;
+  background-image: url("../images/hero/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top -9.4rem;
+  position: relative;
+}
+
+main #hero-container #overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 660px;
+  height: 450px;
+  background-image: linear-gradient(-70deg, rgba(44, 113, 91, 0.9) calc(90% - 80px), transparent 0);
+}
+
+main #hero-container #overlay #center-text {
+  color: white !important;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 100;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+
+main #main-container {
+  max-width: 100%;
+  margin: 0 2rem;
+}
+
+main #main-container #investment p {
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  color: #9b9b9b;
+  font-weight: 100;
+  text-align: left;
+}
+
+main #main-container #investment #button-container {
+  text-align: center;
+}
+
+main #main-container #investment #button-container button {
+  margin-top: 2rem;
+  background-color: #E97300;
+  color: white;
+  padding: 5px 9px;
+  font-size: 1rem;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+}
+
+main #main-container #citizens-advantage #two-grid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #main-container #citizens-advantage #two-grid .row .column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  margin: 0.8rem 0rem;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #main-container #citizens-advantage #two-grid .row .column:nth-child(2) div {
+  border-left: 2px #c0c0c0 solid;
+  padding-left: 3rem;
+}
+
+main #main-container #citizens-advantage #two-grid .row .column div .sub-header {
+  margin-top: 2rem;
+  color: #00945f;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+main #main-container #citizens-advantage #two-grid .row .column div .grid-paragraph {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: #9b9b9b;
+  font-weight: 100;
+  max-width: 90%;
+}
+
+main #main-container #citizens-advantage #two-grid .row .column div .grid-paragraph #learn-more {
+  display: block;
+  cursor: pointer;
+  color: #82a439;
+}
+
+main #main-container #loans {
+  margin-top: 3rem;
+}
+
+main #main-container #loans #loan-container {
+  text-align: center;
+}
+
+main #main-container #loans #loan-container #top {
+  background-color: #00945f;
+  color: white;
+  padding: 1rem 0;
+  font-weight: 100;
+}
+
+main #main-container #loans #loan-container #bottom {
+  background-color: #ebf7f5;
+  height: 100%;
+}
+
+main #main-container #loans #loan-container #bottom p {
+  padding: 1.7rem 3.5rem;
+  line-height: 1.8;
+  color: #9b9b9b;
+  text-align: left;
+  font-weight: 100;
+}
+
+main #main-container #feedback {
+  margin-top: 3rem;
+}
+
+main #main-container #feedback #three-grid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #main-container #feedback #three-grid .row .column {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  max-width: 33%;
+  margin: 0.8rem 0rem;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #main-container #feedback #three-grid .row .column div {
+  text-align: center;
+}
+
+main #main-container #feedback #three-grid .row .column div .feedback-grid-paragraph {
+  max-width: 45%;
+  margin-top: 1rem;
+  line-height: 1.8;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  z-index: 100;
+  position: relative;
+}
+
+main #main-container #feedback #three-grid .row .column div .feedback-grid-paragraph .quote-image {
+  position: absolute;
+  left: -1rem;
+  z-index: 1;
+}
+
+main #main-container #feedback #three-grid .row .column div .feedback-grid-name {
+  margin-top: 0.7rem;
+  color: #00945f;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+main #main-container #feedback #three-grid .row .column:nth-child(2) div .feedback-grid-paragraph {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 100;
+}
+
+main #main-container #footer {
+  margin-top: 4rem;
+}
+
+main #main-container #footer hr {
+  border: 1.5px #00945f solid;
+}
+
+main #main-container #footer #social-links ul {
+  margin-top: 1.8rem;
+}
+
+main #main-container #footer #social-links ul li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+main #main-container #footer #social-links ul li img {
+  max-width: 25px;
+  max-height: 25px;
+  cursor: pointer;
+}
+
+main #main-container #footer #info p {
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+main #main-container #footer #info ul {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+main #main-container #footer #info ul li {
+  list-style-type: none;
+  display: inline;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+main #main-container #footer #info ul span {
+  margin-right: 5px;
+}
+
+main #main-container #investment .main-header, main #main-container #citizens-advantage .main-header {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  color: #00945f;
+  font-weight: 100;
+}
+
+main #main-container #investment .line, main #main-container #citizens-advantage .line {
+  width: 5rem;
+  border: 1.5px #00945f solid;
+  margin: 1rem auto 1rem auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  p {
+    color: whitesmoke;
+  }
+  main #main-container #loans #loan-container #top {
+    background-color: #03472f;
+  }
+  main #main-container #loans #loan-container #bottom {
+    background-color: #00945f;
+  }
+  main #main-container #loans #loan-container #bottom p {
+    color: whitesmoke;
+  }
+  main #main-container #footer #info ul li {
+    color: whitesmoke;
+  }
+  main #main-container #footer #info ul span {
+    color: white;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@media (max-width: 1000px) {
+  main #hero-container {
+    background-position: center;
+  }
+  main #hero-container #overlay {
+    display: none;
+  }
+  main #main-container #feedback #three-grid .row .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+  main #main-container #feedback #three-grid .row .column div .feedback-grid-paragraph {
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo div {
+    text-align: center;
+  }
+  main #main-container #citizens-advantage #two-grid .row:nth-child(1) .column:nth-child(1) {
+    border-top: none;
+  }
+  main #main-container #citizens-advantage #two-grid .row .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    border-top: 2px #c0c0c0 solid;
+  }
+  main #main-container #citizens-advantage #two-grid .row .column:nth-child(2) div {
+    border-left: none;
+    padding-left: initial;
+  }
+  main #main-container #feedback #three-grid .row .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  main #main-container #feedback #three-grid .row .column div p {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

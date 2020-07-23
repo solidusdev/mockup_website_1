@@ -1,0 +1,50 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;;
+    }
+
+    p {
+        color: whitesmoke;
+    }
+
+    main {
+
+        #main-container {
+
+            #loans {
+
+                #loan-container {
+
+                    #top {
+                        background-color: #03472f;;
+                    }
+                    
+                    #bottom {
+                        background-color: #00945f;
+
+                        p {
+                            color: whitesmoke;
+                        }
+                    }
+                }
+            }
+
+            #footer {
+
+                #info {
+
+                    ul {
+                        
+                        li {
+                            color: whitesmoke;
+                        }
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

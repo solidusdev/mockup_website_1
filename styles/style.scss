@@ -1,0 +1,9 @@
+// serving as the main.scss
+
+@import "./scss/cssReset";
+@import "../styles/scss/header";
+@import "./scss/site";
+@import "./helpers/placeholders";
+@import "./helpers/dark_mode";
+@import "./helpers/animations";
+@import "./helpers/media_queries";

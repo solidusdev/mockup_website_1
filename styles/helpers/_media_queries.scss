@@ -1,0 +1,112 @@
+$secondBreakPoint: "(max-width: 1000px)";
+$phone: "(max-width: 700px)";
+
+
+@media #{$secondBreakPoint} { 
+    
+    main {
+
+        #hero-container {
+
+            background-position: center;
+
+            #overlay {
+                display: none;
+            }
+        }
+
+        #main-container {
+
+            #feedback {
+                
+                #three-grid {
+
+                    .row {
+
+                        .column {
+                            flex: 50%;
+                            max-width: 50%;
+
+                            div {
+                                .feedback-grid-paragraph {
+                                    max-width: 50% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media #{$phone} { 
+
+    #logo {
+
+        div {
+            text-align: center;
+        }
+    }
+    
+    main {
+
+        #main-container {
+
+            #citizens-advantage {
+    
+                #two-grid {
+                    
+                    .row {
+
+                        &:nth-child(1) {
+                            
+                            .column {
+                                &:nth-child(1) {
+                                    border-top: none;
+                                }
+                            }
+                        }
+
+                        .column {
+                            
+                            flex: 100%;
+                            max-width: 100%;
+                            border-top: 2px #c0c0c0 solid;
+
+                            &:nth-child(2) {
+                                
+                                div {
+                                    border-left: none;
+                                    padding-left: initial;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #feedback {
+                
+                #three-grid {
+
+                    .row {
+                        
+                        .column {
+                            
+                            flex: 100%;
+                            max-width: 100%;
+
+                            div {
+                                p {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

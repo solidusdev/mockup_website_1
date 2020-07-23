@@ -1,0 +1,289 @@
+main {
+    
+    #hero-container {
+        
+        height: 450px;
+        max-width: 100%;
+        background-image: url("../images/hero/hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left top -9.4rem;
+        position: relative;
+        
+        #overlay {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 660px;
+            height: 450px;
+            background-image: linear-gradient(-70deg, rgba(44, 113, 91, 0.9) calc(90% - 80px), transparent 0);
+
+            #center-text {
+                color: white !important;
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                font-weight: 100;
+                line-height: 1.2;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    
+    #main-container {
+        
+        max-width: 100%;
+        margin: 0 2rem;
+
+        #investment {
+
+            .main-header {
+                @extend %main-header;
+            }
+
+            .line {
+                @extend %line;
+            }
+            
+            p {
+                margin-top: 2.5rem;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1.8;
+                color: rgba(155,155,155,1);
+                font-weight: 100;
+                text-align: left;
+            }
+
+            #button-container{
+    
+                text-align: center;
+                
+                button {
+                    margin-top: 2rem;
+                    background-color: #E97300;
+                    color: white;
+                    padding: 5px 9px;
+                    font-size: 1rem;
+                    font-weight: 100;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        #citizens-advantage {
+
+            .main-header {
+                @extend %main-header;
+            }
+
+            .line {
+                @extend %line;
+            }
+
+            #two-grid {
+
+                .row {
+                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    justify-content: space-between;
+
+                    .column {
+                        
+                        flex: 50%;
+                        max-width: 50%;
+                        margin: 0.8rem 0rem;
+                        align-content: space-between;
+                        justify-content: space-between;
+
+                        // vertical divider
+                        &:nth-child(2) {
+                            div {
+                                border-left: 2px #c0c0c0 solid; 
+                                padding-left: 3rem;
+                            }
+                        }
+
+                        div {
+
+                            .sub-header {
+                                margin-top: 2rem;
+                                color: rgba(0, 148, 95, 1);
+                                font-weight: 100;
+                                font-size: 1.4rem;
+                            }
+
+                            .grid-paragraph {
+                                margin-top: 1rem;
+                                line-height: 1.8;
+                                color: rgba(155,155,155,1);
+                                font-weight: 100;
+                                max-width: 90%;
+                            
+                                #learn-more {
+                                    display: block;
+                                    cursor: pointer;
+                                    color: #82a439;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        #loans {
+            
+            margin-top: 3rem;
+            
+            #loan-container {
+                
+                text-align: center;
+
+                #top {
+                    background-color: #00945f;
+                    color: white;
+                    padding: 1rem 0;
+                    font-weight: 100;
+                }
+
+                #bottom {
+                    background-color: #ebf7f5;
+                    height: 100%;
+
+                    p {
+                        padding: 1.7rem 3.5rem;
+                        line-height: 1.8;
+                        color: rgba(155,155,155,1);
+                        text-align: left;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        #feedback {
+
+            margin-top: 3rem;
+
+            #three-grid {
+                
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    justify-content: space-between;
+                    
+                    .column {
+
+                        flex: 33%;
+                        max-width: 33%;
+                        margin: 0.8rem 0rem;
+                        align-content: space-between;
+                        justify-content: space-between;
+
+                        div {
+                            
+                            text-align: center;
+
+                            .feedback-grid-paragraph {
+                                max-width: 45%;
+                                margin-top: 1rem;
+                                line-height: 1.8;
+                                font-weight: 100;
+                                margin-left: auto;
+                                margin-right: auto;
+                                font-style: italic;
+                                z-index: 100;
+                                position: relative;
+                            
+                                .quote-image {
+                                    position: absolute;
+                                    left: -1rem;
+                                    z-index: 1;
+                                }
+                            }
+
+                            .feedback-grid-name {
+                                margin-top: 0.7rem;
+                                color: rgba(0, 148, 95, 1);
+                                line-height: 1.8;
+                                font-weight: 100;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            div {
+                                .feedback-grid-paragraph { 
+                                    max-width: 95%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    font-weight: 100;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #footer {
+
+            margin-top: 4rem;
+
+            hr {
+                border: 1.5px rgba(0, 148, 95, 1) solid;
+            }
+
+            #social-links {
+                
+                ul {
+                    margin-top: 1.8rem;
+                    
+                    li {
+                        display: inline;
+                        list-style-type: none;
+                        padding-right: 5px;
+
+                        img {
+                            max-width: 25px;
+                            max-height: 25px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            #info {
+                
+                p {
+                    margin-top: 2rem;
+                    font-weight: 100;
+                    font-size: 0.8rem;
+                }
+
+                ul {
+                    
+                    margin-top: 1.5rem;
+                    margin-bottom: 4rem;
+                    
+                    li {
+                        list-style-type: none;
+                        display: inline;
+                        cursor: pointer;
+                        margin-right: 5px;
+                    }
+                    
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
